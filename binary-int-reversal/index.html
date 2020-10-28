@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer to Binary / Binary to Integer</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="description">This is a set of fields for converting an integer to binary and a binary to an integer.
+        </h2>
+        <h3 class="description">A key usecase for this would be in transferring data between a server and a client, it
+            would allow you to save memory if you had several data points you needed to transfer back and forth which could be represented in boolean values.</h3>
+        <div class='column-container'>
+            <div class="column">
+                <h4 id="integer"> Binary to Integer </h4>
+                <input pattern="[0-1]+" id="integer-input" type="text" onKeyUp="objToInt()">
+                <p>This input will only accept binary values.</p>
+            </div>
+            <div class="column">
+                <h4 id="binary">Integer to Binary</h4>
+                <input pattern="[0-9]+" id="binary-input" type="text" onKeyUp="intToSwitch()">
+                <p>This input will only accept non-negative integers.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
