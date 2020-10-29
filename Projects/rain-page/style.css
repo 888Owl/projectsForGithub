@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+
+  #rain_div {
+    width: 100vw;
+    height: 100vh;
+    background-color: #6c78a9;
+  }
+  .drop {
+    border-radius: 100%;
+    background-color: #a1c6cc;
+    position: relative;
+    animation: raindrop 1s infinite;
+  }
+  @keyframes raindrop {
+    0% {
+      top: 0vh;
+      opacity: 1;
+    }
+    100% {
+      top: 80vh;
+      opacity: 0;
+    }
+  }
+  canvas {
+    background-color: hsl(0, 0%, 10%);
+  }
+  #storm {
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+  #cloud_background {
+    position:fixed;
+    top: 0vh;
+    width: 100vw;
+    height: 40vh;
+    background-image: linear-gradient(grey, #6c78a9);
+  }
+  
