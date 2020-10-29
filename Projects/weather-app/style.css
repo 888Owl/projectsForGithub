@@ -1,0 +1,59 @@
+#body{
+    background-image: url(https://images.unsplash.com/photo-1446858276256-f36dc2c367d6?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=75f67ec468059a2bf61000fa5ec501a1);
+    }
+    #weather-icon{
+      text-align:center;
+    }
+    .owl-container{
+      
+      display: grid;
+      grid-auto-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(87px auto);
+      grid-gap: 10px;
+      grid-template-areas: 
+        "... he ..."
+        "... ... ..."
+        "... ... ..."
+        "... we ...";
+      }
+    
+    
+    .local-weather{
+      background-color: rgb(250,250,250, 0.4) ;
+      border-radius: 25px;
+      border: 3px solid;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    
+    .header{
+      grid-area: he;
+      padding-top: 100px;
+      font-weight:bold;
+      color: rgb(230,230,240);
+    }
+    #here{
+      text-align:center;
+    }
+    
+    .weatherBox{
+      grid-area:we;
+      text-align:center;
+      padding: 25px;
+    }
+    
+    .weather{
+      grid-area: lwe;
+    }
+    
+    .location{
+      grid-area: loc;
+    }
+    
+    .temperature{
+      grid-area: temp;
+      padding-bottom:15px;
+    }
+    

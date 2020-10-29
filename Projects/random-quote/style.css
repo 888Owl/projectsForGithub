@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Coiny);
+
+.field {
+  background-color: teal;
+}
+.liquidContainer {
+  background-color: teal;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(87px auto);
+  grid-gap: 25px;
+  grid-template-areas:
+    "...  head  ..."
+    "... ... ..."
+    "... gen ..."
+    "... ... ..."
+    "... re ...";
+}
+
+.header {
+  grid-area: head;
+  text-align: center;
+}
+#title {
+  font-family: Pacifico;
+  padding: 30px;
+  text-shadow: 2px 2px #FF8700;
+}
+
+.generator {
+  grid-area: gen;
+  text-align: center;
+}
+.remember {
+  grid-area: re;
+  text-align: center;
+  background-color: rgba(256,256,256,0.6);
+  color: teal;
+  padding: 25px;
+  border-radius: 7px;
+}
+.quote {
+  grid-area: q;
+  text-align: center;
+}
+
+.btn {
+  background-color: black;
+  border-radius: 6px;
+  color: white;
+  font-family: Coiny;
+}
+#me {
+  text-align: center;
+}
+
+a{
+  color: white;
+}
