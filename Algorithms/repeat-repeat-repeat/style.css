@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(orange, black);
+    text-align: center;
+}
+
+h1 {
+    margin: 5%; 
+}
+
+input {
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
