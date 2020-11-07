@@ -8,7 +8,9 @@ const crawlDisp = document.getElementById('crawlDisp')
 const crawlerTitle = document.getElementById('crawlerTitle')
 const crawlArticle = document.getElementById('crawlerBody')
 const crawlerEpisode = document.getElementById('crawlerEpisode')
-
+const mainSection = document.getElementById('mainSection')
+const apiContent = document.getElementById('api-content')
+const closeCrawler = document.getElementById('closeCrawler')
 const films = () => {
     fetch('https://swapi.dev/api/films')
         .then(response => response.json())
@@ -73,22 +75,25 @@ const selectedtitle = (num) => {
         .then(response => response.json())
         .then(data => {
             if (data.results) {
-                console.log(1234321)
                 crawlDisp.style.display =  'flex'
+                apiContent.style.display = 'none'
+                mainSection.style.display = 'none'
                 crawlerTitle.innerText = data.results[num].title
                 crawlerEpisode.innerText = episode(num)
                 crawlArticle.innerText = data.results[num].opening_crawl
-                setTimeout( resetCrawler(), 60000)
+                sleep(60000).then(() => resetCrawler())
             }
         });
 }
 
 const resetCrawler = () => {
-    console.log(666)
     crawlDisp.style.display = 'none'
+    apiContent.style.display = 'block'
+    mainSection.style.display = 'block'
     crawlerTitle.innerText = ''
     crawlArticle.innerText = ''
     crawlerEpisode.innerText = ''
+    console.log('potato')
 }
 
 const episode = (num) => {
@@ -107,3 +112,9 @@ const episode = (num) => {
         return 'Episode III'
     }
 }
+
+
+const sleep = (ms) => {
+    console.log('sleeping')
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }

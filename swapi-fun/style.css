@@ -27,6 +27,7 @@ button {
     background-image: radial-gradient(white, red);
     opacity: 0.8;
     border-radius: 3px;
+    font-size: large;
 }
 
 button:hover {
@@ -36,8 +37,12 @@ button:hover {
 }
 
 @keyframes flashingButton {
-    from {background-image: radial-gradient(white, red)}
-    to {background-image: radial-gradient(red, white)}
+    from {
+        background-image: radial-gradient(white, red)
+    }
+    to {
+        background-image: radial-gradient(red, white)
+    }
 }
 
 .commandRow {
@@ -75,21 +80,29 @@ li {
     line-height: 120%;
     text-align: justify;
     background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
-  }
-  
-  @keyframes crawl {
+}
+
+@keyframes crawl {
     0% {
-      top: 0;
-      transform: rotateX(20deg) translateZ(0);
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
     }
     100% {
-      top: -6000px;
-      transform: rotateX(25deg) translateZ(-2500px);
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
     }
-  }
-  
-  .crawl {
+}
+
+.crawl {
     position: relative;
     transform-origin: 50% 100%;
     animation: crawl 60s linear;
-  }
+}
+
+.crawlerTitle { 
+    margin-bottom: 15px;
+}
+
+.title {
+    text-align: center;
+}
