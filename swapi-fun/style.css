@@ -106,3 +106,18 @@ li {
 .title {
     text-align: center;
 }
+
+.personHome {
+    cursor: pointer;
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    color: white; 
+    font-size: 2rem;
+}
+
+#personDisp {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
