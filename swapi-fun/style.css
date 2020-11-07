@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: yellow;
+}
+
+button {
+    padding: 3px 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: radial-gradient(white, red);
+    opacity: 0.8;
+}
+
+button:hover {
+    animation-name: flashingButton;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flashingButton {
+    from {background-image: radial-gradient(white, red)}
+    to {background-image: radial-gradient(red, white)}
+}
+
+.commandRow {
+    display: flex;
+    flex-direction: row;
+}
