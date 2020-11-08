@@ -233,11 +233,11 @@ const checkSpecies = (num) => {
                 mainSection.style.display = 'none'
                 speciesHome.style.display = 'block'
                 speciesName.innerText = `Species: ${data.results[num].name}`
-                speciesHeight.innerText = `${data.results[num].name} have an average height of ${data.results[num].average_height}cm.`
-                speciesLifeSpan.innerText = `${data.results[num].name} live an average of ${data.results[num].average_lifespan} years.`
-                specieslanguage.innerText = `${data.results[num].name} speak ${data.results[num].language}.`
-                speciesDesignation.innerText = `${data.results[num].name} are designated as a ${data.results[num].designation} species.`
-                speciesClassification.innerText = `${data.results[num].name} are classified as a ${data.results[num].classification} species.`
+                speciesHeight.innerText = `${data.results[num].name}s have an average height of ${data.results[num].average_height}cm.`
+                speciesLifeSpan.innerText = `${data.results[num].name}s live an average of ${data.results[num].average_lifespan} years.`
+                specieslanguage.innerText = `${data.results[num].name}s speak ${data.results[num].language}.`
+                speciesDesignation.innerText = `${data.results[num].name}s are designated as a ${data.results[num].designation} species.`
+                speciesClassification.innerText = `${data.results[num].name}s are classified as a ${data.results[num].classification} species.`
             }
         });
 }
