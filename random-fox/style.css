@@ -1,0 +1,31 @@
+html, body {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 1.4rem;
+    margin: auto;
+    padding: 3px 6px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #3682b5;
+}
+button:hover {
+    border-color: #26597e;
+    background-color: transparent;
+    color: white;
+
+}
+
+#foxy {
+    margin: auto;
+    max-height: 80%;
+}

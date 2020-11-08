@@ -1,7 +1,3 @@
-// fetch('https://swapi.dev/api/')
-//     .then(response => response.json())
-//     .then(data => console.log(data));
-
 // initial variables and utility functions
 const apiToHtml = document.getElementById('api-content')
 const appendableList = document.getElementById('listItems')
