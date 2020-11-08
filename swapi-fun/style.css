@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-    color: yellow;
+    color: #fef84a;
 }
 
 button {
@@ -58,7 +58,7 @@ li {
     width: 30%;
     list-style-type: none;
     text-align: center;
-    color: yellow;
+    color: #fef84a;
     font-size: 1.4em;
 }
 
@@ -108,16 +108,49 @@ li {
 }
 
 .personHome {
+    display: none;
     cursor: pointer;
     position: absolute;
     top: 1%;
     left: 2%;
-    color: white; 
+    color: #fef84a; 
     font-size: 2rem;
 }
 
 #personDisp {
     text-align: center;
-    display: flex;
+    display: none;
+    flex-direction: column;
+}
+
+h4 {
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fef84a;
+}
+
+#planetDisp {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+#speciesDisp {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+#starshipDisp {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+#vehicleDisp {
+    text-align: center;
+    display: none;
     flex-direction: column;
 }
