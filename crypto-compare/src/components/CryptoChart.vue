@@ -1,11 +1,14 @@
 <template>
   <div>
-    <a href="https://www.coingecko.com/en/coins/bitcoin">Bitcoin on Coingecko</a><br/>
-    <a href="https://www.coingecko.com/en/coins/ethereum">Ethereum on Coingecko</a><br/>
-    <a href="https://www.coingecko.com/en/coins/monero">Monero on Coingecko</a><br/>
+    <div class='row-even'>
+    <a href="https://www.coingecko.com/en/coins/bitcoin">Bitcoin on Coingecko</a>
+    <a href="https://www.coingecko.com/en/coins/ethereum">Ethereum on Coingecko</a>
+    <a href="https://www.coingecko.com/en/coins/monero">Monero on Coingecko</a>
+    </div>
     <br/><br/><br/>
     <div class="chart-wrapper">
       <apexchart
+      id="apexx"
         v-if='this.series[0].data.length === 27 && this.series[1].data.length === 27 && this.series[2].data.length === 27'
         width="800"
         type="line"
@@ -115,5 +118,23 @@ div.chart-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  }
+
+#apexx{
+background-color: rgba(256,256,256,0.9);
+}
+
+a{
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 1.5em;
+  font-weight: 700;
+  
+}
+
+.row-even {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 </style>
