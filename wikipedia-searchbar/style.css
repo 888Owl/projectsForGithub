@@ -1,77 +1,122 @@
 @import url('https://fonts.googleapis.com/css?family=Concert+One|Orbitron');
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family:concert one, sans-serif, auto;
-  text-align:center;
-    width:minmax(90px, auto);
-    background-color:#FFF;
-  }
-  
-  h1 {
-  margin-top: 5%;  
-  }
-  
-  li{
-    list-style-type: none;
-    padding:10px;
-    background-color: rgba(256,256,265,0.3);
-    border-radius:20px;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  ul{
-  text-align:center;
-    display: flex;
-    flex-flow: column;
-  }
-  #search-button{
-    border-radius:12px;
-  }
-  .portal{
-    border-radius:12px;
-  }
-  h1{
-    text-align:center;
-    margin-top:30px;
-    padding:20px;
-    color: white;
-  }
-  h3{
-    color: white;
-    text-align:center;
-    padding:20px;
-  }
-  form{
-    text-align:center;
-    padding-bottom:15px;
-  }
-  
-  .wikiContainer{
-    background-color: #000F3C;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    vertical-align: middle;
-    flex-flow: column;
-    width: 100vw;
-    height: 100vh;
-    max-height: 100vh;
-    overflow-y: scroll;
-  }
-  a {
-    color: #FFF;
-  } 
-  .portala{
-    color: #000;
-  }
-  
+body {
+  background-image: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1753&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: concert one, sans-serif, auto;
+  text-align: center;
+  width: minmax(90px, auto);
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+}
+
+#search-button {
+  padding: 3px 6px;
+  background-color: slategrey;
+  color: snow;
+  border-radius: 6px;
+  border: 2px solid azure;
+  font-size: 1em;
+}
+
+.portala {
+  text-decoration: none;
+  padding: 3px 6px;
+  background-color: slategrey;
+  color: snow;
+  border-radius: 6px;
+  border: 2px solid azure;
+  font-size: 1em;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5%;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px slategrey;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px slategrey;
+
+}
+
+form {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.wikiContainer {
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  vertical-align: middle;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+#search-bar {
+  font-size: 1em;
+  padding: 4px 6px;
+  background-color: azure;
+  color: slategrey;
+  border-radius: 6px;
+}
+
+.message {
+  height: 10vh;
+  width: 20vw;
+  position: absolute;
+  background-color: white;
+  color: red;
+  font-weight: 600;
+  font-size: 1.1em;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  border: 1px solid red;
+}
+
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
