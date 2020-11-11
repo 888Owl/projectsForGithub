@@ -1,16 +1,26 @@
 <template>
   <div>
-    <div class='row-even'>
-    <a href="https://www.coingecko.com/en/coins/bitcoin">Bitcoin on Coingecko</a>
-    <a href="https://www.coingecko.com/en/coins/ethereum">Ethereum on Coingecko</a>
-    <a href="https://www.coingecko.com/en/coins/monero">Monero on Coingecko</a>
+    <div class="row-even">
+      <a href="https://www.coingecko.com/en/coins/bitcoin"
+        >Bitcoin on Coingecko</a
+      >
+      <a href="https://www.coingecko.com/en/coins/ethereum"
+        >Ethereum on Coingecko</a
+      >
+      <a href="https://www.coingecko.com/en/coins/monero"
+        >Monero on Coingecko</a
+      >
     </div>
-    <br/><br/><br/>
+    <br />
     <div class="chart-wrapper">
       <apexchart
-      id="apexx"
-        v-if='this.series[0].data.length === 27 && this.series[1].data.length === 27 && this.series[2].data.length === 27'
-        width="800"
+        id="apexx"
+        v-if="
+          this.series[0].data.length === 27 &&
+          this.series[1].data.length === 27 &&
+          this.series[2].data.length === 27
+        "
+        width="1000"
         type="line"
         :options="options"
         :series="series"
@@ -24,14 +34,39 @@
 export default {
   name: "CryptoChart",
   data: () => ({
-   options: {
+    options: {
       chart: {
         id: "vuechart-example",
       },
       dataLabels: {
-              enabled: true,
-            },
+        enabled: true,
+        formatter: function (val) {
+      return val.toFixed(2)
+  },
+      },
+      yaxis: {
+        show: true,
+      showForNullSeries: true,
+      seriesName: undefined,
+      decimalsInFloat: 2,
+        axisBorder: {
+          show: true,
+          color: "#78909C",
+          height: "100%",
+          width: 1,
+          offsetX: 0,
+          offsetY: 0,
+        },
+      },
       xaxis: {
+        axisBorder: {
+          show: true,
+          color: "#78909C",
+          height: 1,
+          width: "100%",
+          offsetX: 0,
+          offsetY: 0,
+        },
         categories: [
           "1",
           "2",
@@ -69,7 +104,7 @@ export default {
           fontSize: "20px",
         },
       },
-      colors: ["#00897b", 'red', 'blue' ],
+      colors: ["#00897b", "red", "blue"],
     },
     series: [
       {
@@ -118,18 +153,17 @@ div.chart-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-
-#apexx{
-background-color: rgba(256,256,256,0.9);
 }
 
-a{
+#apexx {
+  background-color: rgba(256, 256, 256, 0.9);
+}
+
+a {
   color: white;
   text-shadow: 2px 2px black;
   font-size: 1.5em;
   font-weight: 700;
-  
 }
 
 .row-even {
