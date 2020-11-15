@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../Images/shady.jpg);
+    background-image: url(./shady.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -39,6 +39,7 @@ h3 {
     background-color: rgba(white, 0.9);
     margin-left: 5%;
     margin-right: 5%;
+    color: white;
 }
 
 .cstBckDrop {
