@@ -124,5 +124,5 @@ const hideMessage = () => {
     let result = document.getElementById('result')
     show.style.display = 'inline-block'
     hide.style.display = 'none'
-    result.style.display = 'block'
+    result.style.display = 'none'
 }
