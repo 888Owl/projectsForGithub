@@ -6,19 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Encrypter</title>
+    <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+        🔡
+    </text></svg>">
 </head>
 
 <body>
     <div>
-        <h1>I have a passion for encryption and would like to begin creating basic text encryption and this is a test of
-            that.</h1>
             <input type="text" placeholder="message" id="encInp" >
             <br>
             <input type="text" placeholder="salt" id="salt">
             <br>
-        
-        <p> <button class='btn' onclick="enc()">Encrypt</button> <button class='btn' onclick="dec()">Decrypt</button> </p>
-        <h3 id="result"></h3>
+            <input style="opacity: 0;" type="text" id='forCopying'>
+            <p> <button class='btn' onclick="enc()">Encrypt</button> <button class='btn' onclick="dec()">Decrypt</button> </p>
+            <button class='btn' id="show" onclick="showMessage()">Show Message</button>
+            <button style="display: none;" class='btn' id="hide" onclick="hideMessage()">Hide Message</button>
+            <br>
+            <button class='btn' onclick="copyToClip()">Copy Message</button>
+            <h3 style="display: none;" id="result"></h3>
     </div>
 </body>
 <script src="root.js"></script>

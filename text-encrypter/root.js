@@ -44,8 +44,10 @@ const thirdEnc = (tempArr2) => {
             tempArr3[i] = parseInt(Number(tempArr2[i]), 2)
         }
     }
+    const forCopying = document.getElementById('forCopying')
     const result = document.getElementById('result')
     result.innerText = tempArr3.join(' ')
+    forCopying.value = tempArr3.join(' ')
 }
 
 
@@ -93,8 +95,34 @@ const thirdDec = (tempArr2) => {
             tempArr[i] = ' '
         }
     }
-
     const result = document.getElementById('result')
-    result.innerText = tempArr.reverse().join('')
+    const forCopying = document.getElementById('forCopying')
+    forCopying.value = tempArr.reverse().join('')
+    result.innerText = tempArr.join('')
 
+}
+
+const copyToClip = () => {
+    const forCopying = document.getElementById('forCopying')
+    forCopying.select();
+    forCopying.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+}
+
+const showMessage = () => {
+    let hide = document.getElementById('hide')
+    let show = document.getElementById('show')
+    let result = document.getElementById('result')
+    show.style.display = 'none'
+    hide.style.display = 'inline-block'
+    result.style.display = 'block'
+}
+
+const hideMessage = () => {
+    let hide = document.getElementById('hide')
+    let show = document.getElementById('show')
+    let result = document.getElementById('result')
+    show.style.display = 'inline-block'
+    hide.style.display = 'none'
+    result.style.display = 'block'
 }
