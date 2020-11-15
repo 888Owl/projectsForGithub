@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 90vw;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 2px 4px;
+    color: slategrey;
+    background-color: snow;
+    border-radius: 6px;
+    border: slategray 2px solid;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: snow;
+    background-color: slategray;
+    border: snow 2px solid;
+}
